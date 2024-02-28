@@ -1,11 +1,11 @@
-print("[1/3] Loading jz")
+print("[1/2] Loading jz")
 from sys import path
 
 path.insert(1, "submodules/jz")
 del path
 from jz import compress
 
-print("[2/3] Building package")
+print("[2/2] Building package")
 from os import listdir, chdir
 
 chdir("files")
