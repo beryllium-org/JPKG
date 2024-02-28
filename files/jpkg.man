@@ -1,0 +1,6 @@
+Beryllium OS package manager version 2.
+
+Usage:
+    jpkg install package_file.jpk
+    jpkg uninstall package_name
+    jpkg list
