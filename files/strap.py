@@ -13,4 +13,3 @@ for i in [
 
 shutil.copy("jpkg.lja", path.join(root, "bin", "jpkg.lja"))
 shutil.copy("jpkg.man", path.join(root, "usr/share/man", "jpkg.man"))
-be.api.setvar("return", "0")
