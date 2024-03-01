@@ -113,7 +113,7 @@ if not vr("errored"):
         f"{colors.green_t}JPKG{colors.endc}: Verifying package transaction ... 0%"
     )
     for pv[get_pid()]["dependency"] in vr("pklist")[1]:
-        if vr("dependency") not in pklist[0].keys():  # not in installed
+        if vr("dependency") not in vr("pklist")[0].keys():  # not in installed
             term.nwrite(
                 f"\n{colors.error}JPKG Error{colors.endc}: Dependency not satisfied: "
                 + vr("dependency")
