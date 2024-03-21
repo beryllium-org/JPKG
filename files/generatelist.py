@@ -25,7 +25,7 @@ for pv[get_pid()]["package"] in vr("listing"):
         "omit",
         ([] if "omit" not in be.based.user_vars.keys() else be.api.getvar("omit")),
     )
-    with be.api.fopen("/etc/jpkg/installed/" + vr("package")) as pv[get_pid()][
+    with be.api.fs.open("/etc/jpkg/installed/" + vr("package")) as pv[get_pid()][
         "conf_f"
     ]:
         vr("manifest", load(vr("conf_f")))

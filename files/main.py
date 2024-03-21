@@ -16,7 +16,7 @@ elif len(vr("opts")["w"]) > 1 and vr("opts")["w"][0] == "uninstall":
     be.api.subscript("/bin/jpkg/uninstall.py")
 elif len(vr("opts")["w"]) is 1 and vr("opts")["w"][0] == "list":
     for pv[get_pid()]["package"] in listdir(pv[0]["root"] + "/etc/jpkg/installed"):
-        with be.api.fopen(pv[0]["root"] + "/etc/jpkg/installed/" + vr("package")) as pv[
+        with be.api.fs.open(pv[0]["root"] + "/etc/jpkg/installed/" + vr("package")) as pv[
             get_pid()
         ]["manifest_f"]:
             from json import load

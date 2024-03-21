@@ -190,7 +190,7 @@ if not vr("errored"):
                 break
             else:
                 # manifest install
-                with be.api.fopen(
+                with be.api.fs.open(
                     "/etc/jpkg/installed/" + vr("manifest")["package_name"] + ".json",
                     "w",
                 ) as pv[get_pid()]["newman"]:
