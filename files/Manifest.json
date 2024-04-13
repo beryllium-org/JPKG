@@ -1,7 +1,7 @@
 {
     "JPKG_minimum_version": 2,
     "package_name": "jpkg",
-    "version": [2, 0, 1],
+    "version": [2, 0, 2],
     "dependencies": [],
     "conflicts": [],
     "install": "installer.py",
