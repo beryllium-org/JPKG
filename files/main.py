@@ -7,11 +7,6 @@ vr("jpkg_version", 2)
 
 if len(vr("opts")["w"]) > 1 and vr("opts")["w"][0] == "install":
     be.api.subscript("/bin/jpkg/install.py")
-
-    term.write(
-        "\nYou are higly advised to reboot, "
-        + "since package decompression severly fragments the memory."
-    )
 elif len(vr("opts")["w"]) > 1 and vr("opts")["w"][0] == "uninstall":
     be.api.subscript("/bin/jpkg/uninstall.py")
 elif len(vr("opts")["w"]) is 1 and vr("opts")["w"][0] == "list":
