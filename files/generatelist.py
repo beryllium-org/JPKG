@@ -7,7 +7,7 @@ Returns in vr("pklist") a dict with every package name and its deps / conflicts
 {package: [list(deps), list(conflicts)]}
 """
 
-term.nwrite("Generating package list.. 0%")
+term.nwrite("Listing packages.. 0%")
 vr("listing", listdir(pv[0]["root"] + "/etc/jpkg/installed/"))
 vr("pkc", len(vr("listing")))  # package count
 vr("pkl", 0)  # packages loaded

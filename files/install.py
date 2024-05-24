@@ -110,7 +110,7 @@ if not vr("errored"):
 # checks before install
 if not vr("errored"):
     term.nwrite(
-        f"{colors.green_t}JPKG{colors.endc}: Verifying package transaction ... 0%"
+        f"{colors.green_t}JPKG{colors.endc}: Verifying transaction.. 0%"
     )
     for pv[get_pid()]["dependency"] in vr("pklist")[1]:
         if vr("dependency") not in vr("pklist")[0].keys():  # not in installed
@@ -123,7 +123,7 @@ if not vr("errored"):
     if not vr("errored"):
         term.clear_line()
         term.nwrite(
-            f"{colors.green_t}JPKG{colors.endc}: Verifying package transaction ... 50%"
+            f"{colors.green_t}JPKG{colors.endc}: Verifying transaction.. 50%"
         )
     for pv[get_pid()]["conflict"] in vr("pklist")[2]:
         if vr("conflict") in vr("pklist")[0].keys():  # in installed
@@ -136,7 +136,7 @@ if not vr("errored"):
     if not vr("errored"):
         term.clear_line()
         term.write(
-            f"{colors.green_t}JPKG{colors.endc}: Verifying package transaction ... 100%"
+            f"{colors.green_t}JPKG{colors.endc}: Verifying transaction.. 100%"
         )
     else:
         term.write()
