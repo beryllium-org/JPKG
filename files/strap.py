@@ -9,7 +9,7 @@ for i in [
     "uninstall.py",
     "main.py",
 ]:
-    shutil.copy(i, path.join(root, "bin/jpkg", i))
+    shutil.copyfile(i, path.join(root, "bin/jpkg", i))
 
-shutil.copy("jpkg.lja", path.join(root, "bin", "jpkg.lja"))
-shutil.copy("jpkg.man", path.join(root, "usr/share/man", "jpkg.man"))
+shutil.copyfile("jpkg.lja", path.join(root, "bin", "jpkg.lja"))
+shutil.copyfile("jpkg.man", path.join(root, "usr/share/man", "jpkg.man"))
