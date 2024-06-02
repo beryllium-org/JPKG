@@ -38,7 +38,7 @@ for pv[get_pid()]["package"] in vr("listing"):
             for pv[get_pid()]["dependency"] in vr("manifest")["dependencies"]:
                 vr("dependencies").add(vr("dependency"))
             for pv[get_pid()]["conflict"] in vr("manifest")["conflicts"]:
-                conflicts.add(vr("conflict"))
+                vr("conflicts").add(vr("conflict"))
         vrd("manifest")
     term.nwrite("\010 \010" * vr("cc"))
     vrp("pkl")
